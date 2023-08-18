@@ -18,16 +18,33 @@
     <div class="row">
       <p>To Generate a course either click on the random course generator</p>
 
-      <p>If you would like to generate a specific course go to <a href="/specific_course">dis page</a></p> 
-
       <p>If you would like to contribute go to <a href="http://apps.headwallphotonics.com/">this app</a>
-        Generate a polygon, copy the lat, lngs into <a href="/new_shape">dis page</a></p>
+        Generate a polygon, copy the lat, lngs into <a href="/new_shape">this page</a></p>
 
       <h1>Random Courserator</h1>
       <form method="post">
-        <label for="point_number">Enter number of points</label>
+        <label for="c_point_number">Enter number of points</label>
         <br>
-        <input type="text" name="point_number" placeholder="50" value="{{ request.form['point_number'] }}"></input>
+        <input type="text" name="c_point_number" placeholder="50" value="{{ request.form['point_number'] }}"></input>
+        <br>
+        <button class="btn btn-success" type="submit">Create your course</button>
+      </form>
+      <br>
+      <h1>Specific Courserator</h1>
+      <h3>Courses</h3>
+      <ul>
+        {% for name in courses %}
+        <li> {{ name }}  </li>
+        {% endfor %}
+      </ul>
+      <form method="post">
+        <label for="s_point_number">Enter number of points</label>
+        <br>
+        <input type="text" name="s_point_number" placeholder="50" value="{{ request.form['point_number'] }}"></input>
+        <br>
+        <label for="course_name">Enter course name</label>
+        <br>
+        <input type="text" name="course_name" placeholder="lower_wilder" value="{{ request.form['course_name'] }}"></input>
         <br>
         <button class="btn btn-success" type="submit">Create your course</button>
       </form>

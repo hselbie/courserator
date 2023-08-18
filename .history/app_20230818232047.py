@@ -25,12 +25,11 @@ def my_form_post():
     
 @app.route('/specific_course')
 def specific_course():
-    course_names = location_db.get_all_shape_names()
-    return render_template('specific_course.html', courses=course_names)
+    return render_template('specific_course.html')
 
 @app.route('/specific_course', methods=['GET','POST'])
 def specific_course_post():
-    point_number = request.form['new_point_number']
+    point_number = request.form['point_number']
     point_number = int(point_number)
     location_id = request.form['course_name']
     random_points.get_specific_course(location_string=location_id, p_number=point_number)

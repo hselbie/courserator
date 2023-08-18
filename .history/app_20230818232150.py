@@ -30,7 +30,7 @@ def specific_course():
 
 @app.route('/specific_course', methods=['GET','POST'])
 def specific_course_post():
-    point_number = request.form['new_point_number']
+    point_number = request.form['point_number']
     point_number = int(point_number)
     location_id = request.form['course_name']
     random_points.get_specific_course(location_string=location_id, p_number=point_number)

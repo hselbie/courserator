@@ -6,16 +6,17 @@ import location_db
 
 def get_rando_location_object():
     locations = location_db.get_all_shape_names()
-    rand_number = random.randint(0,len(locations)-1)   
+    rand_number = random.randint(0,len(location_db.local_zone_collection)-1)   
     return locations[rand_number]
 
+
 def get_polygon(location_id: str):
-    polygon_raw = location_db.get_shape_data(location_id=location_id, d_type='polygon')
+    polygon_raw = location_db.local_zone_collection.get(location_id)['polygon']
     poly = Polygon(polygon_raw)
     return poly
 
 def get_start_points(location_id: str):
-    start_points = location_db.get_shape_data(location_id=location_id, d_type='start_points')
+    start_points = location_db.local_zone_collection.get(location_id)['start_points']
     return start_points
 
 def polygon_random_points (poly, num_points):

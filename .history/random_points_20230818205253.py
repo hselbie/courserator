@@ -4,18 +4,54 @@ from shapely.geometry import Polygon, Point
 import simplekml
 import location_db
 
+def is_float(string):
+    try:
+        float(string)
+        return True
+    except ValueError:
+        return False
+
+def format_point_list(point_list):
+    split_comma = point_list.split(',')
+    final_split = []
+    for point in split_comma:
+        if '\n' in point:
+            split_point = point.split('\n')
+            x0 = split_point[0]
+            x1 = split_point[1]
+            if is_float(x0):
+                final_split.append(x0)
+            if is_float(x1):
+                final_split.append(x1)
+        else:
+            final_split.append(float(point))
+    zipped = [(final_split[i],final_split[i+1]) for i in range(0,len(final_split),2)]
+
+    return zipped 
+
+    
+
+def add_to_location_library(data_name, shape_coords, start_coords):
+    location_db.local_zone_collection[data_name]={}
+    # data need to be formatted in list of tuple pairs
+    location_db.local_zone_collection[data_name]['polygon']= format_point_list(shape_coords) 
+    location_db.local_zone_collection[data_name]['start_points']= format_point_list(start_coords)
+    return data_name
+
+
+
 def get_rando_location_object():
-    locations = location_db.get_all_shape_names()
-    rand_number = random.randint(0,len(locations)-1)   
-    return locations[rand_number]
+    location_keys = list(location_db.local_zone_collection.keys())
+    rand_number = random.randint(0,len(location_db.local_zone_collection)-1)
+    return location_keys[rand_number]
 
 def get_polygon(location_id: str):
-    polygon_raw = location_db.get_shape_data(location_id=location_id, d_type='polygon')
+    polygon_raw = location_db.local_zone_collection.get(location_id)['polygon']
     poly = Polygon(polygon_raw)
     return poly
 
 def get_start_points(location_id: str):
-    start_points = location_db.get_shape_data(location_id=location_id, d_type='start_points')
+    start_points = location_db.local_zone_collection.get(location_id)['start_points']
     return start_points
 
 def polygon_random_points (poly, num_points):
@@ -89,10 +125,9 @@ def main(p_number):
 
 if __name__ == '__main__':
     # Choose the number of points desired. This example uses 20 points. 
-
-    location_string = get_rando_location_object()
+    # location_string = get_rando_location_object()
     # chosen_polygon = get_polygon(location_id=location_string)
     # spoint = get_start_points(location_id=location_string)
     # points = polygon_random_points(poly=chosen_polygon,num_points= 20)
     # convert_rando_points_kml(start_points=spoint, points=points, location_id=location_string)
-    # format_point_list(point_list=sample_data)
+    format_point_list(point_list=sample_data)

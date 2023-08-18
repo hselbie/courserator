@@ -1,0 +1,13 @@
+FROM python:3.8
+ADD requirements.txt ./strava_app/requirements.txt
+COPY . /strava_app
+
+WORKDIR /random_gps_points
+RUN pip install --upgrade pip
+RUN pip install -r ./requirements.txt
+
+ENV APP_SETTINGS settings.cfg
+
+# ENTRYPOINT ["python"]
+CMD ["flask", "run", "--host", "0.0.0.0"]
+

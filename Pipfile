@@ -10,6 +10,13 @@ numpy = "*"
 simplekml = "*"
 flask = "*"
 tinydb = "*"
+gunicorn = "*"
+streamlit = "*"
+streamlit-drawable-canvas = "*"
+folium = "*"
+streamlit-folium = "*"
+streamlit-extras = "*"
+sartopo-python = "*"
 
 [dev-packages]
 autopep8 = "*"

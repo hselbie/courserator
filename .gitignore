@@ -1,0 +1,94 @@
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+output/*
+oldfiles/*
+shape_db.json
+
+# User-specific files
+.history/
+.localhistory/
+.localhistory/*
+*.pyc
+*.pyo
+*.pyz
+*.pyzw
+*.rbc
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+*.md~
+*.swp
+*~
+
+# Environment variable files
+.env
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+logs/
+*.log
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# TypeScript
+*.tsbuildinfo
+
+# Others
+*.log
+*.bak
+*.backup
+*.swp
+*.tmp
+*.db
+*.sqlite
+*.sqlite3
+.sass-cache/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Yarn
+yarn-error.log
+
+# ignore ALL .log files
+*.log
+variables.py
+big-data-379417-15c0ac2a1487.json
+demo_streamlit*
+
+# ignore ALL files in ANY directory named temp
+imaged_directory/
+images/
+multimodalembedding/

@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
-    <Document id="25">
-        <Placemark id="27">
+    <Document id="7">
+        <Placemark id="9">
             <name>hugo</name>
-            <Point id="26">
-                <coordinates>-95.85749954186063,36.04252278259376,0.0</coordinates>
+            <Point id="8">
+                <coordinates>-122.04835767869632,36.96511952970288,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="29">
+        <Placemark id="11">
             <name>hugo</name>
-            <Point id="28">
-                <coordinates>-97.77006924610284,37.885111198634455,0.0</coordinates>
+            <Point id="10">
+                <coordinates>-121.99532777123193,36.986377413120124,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="31">
+        <Placemark id="13">
             <name>hugo</name>
-            <Point id="30">
-                <coordinates>-93.82358171288956,36.10574956373404,0.0</coordinates>
+            <Point id="12">
+                <coordinates>-121.98254794730866,37.00806594282323,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="33">
+        <Placemark id="15">
             <name>hugo</name>
-            <Point id="32">
-                <coordinates>-95.59290116539546,36.492520823614655,0.0</coordinates>
+            <Point id="14">
+                <coordinates>-122.00878715924283,37.00702275107752,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="35">
+        <Placemark id="17">
             <name>hugo</name>
-            <Point id="34">
-                <coordinates>-98.43981071474558,36.59949833303958,0.0</coordinates>
+            <Point id="16">
+                <coordinates>-122.00692002946934,36.973142687454235,0.0</coordinates>
             </Point>
         </Placemark>
     </Document>

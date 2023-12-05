@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1297">
+        <Placemark id="1329">
+            <name>S1</name>
+            <Point id="1328">
+                <coordinates>36.966627,-121.968842,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1331">
+            <name>5</name>
+            <Point id="1330">
+                <coordinates>36.95343506006461,-121.96207133988672,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1333">
+            <name>5</name>
+            <Point id="1332">
+                <coordinates>36.995916736233625,-121.9905171998702,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1335">
+            <name>5</name>
+            <Point id="1334">
+                <coordinates>36.981758092768,-122.04814872784604,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1337">
+            <name>5</name>
+            <Point id="1336">
+                <coordinates>36.94167138822639,-122.04915547090053,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1339">
+            <name>5</name>
+            <Point id="1338">
+                <coordinates>36.947258789870645,-121.97874154183692,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1341">
+            <name>5</name>
+            <Point id="1340">
+                <coordinates>36.9833301235089,-122.0382200475042,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1343">
+            <name>5</name>
+            <Point id="1342">
+                <coordinates>36.95543903394633,-121.98220859251849,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1345">
+            <name>5</name>
+            <Point id="1344">
+                <coordinates>36.975731539650646,-122.01555552936703,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1347">
+            <name>5</name>
+            <Point id="1346">
+                <coordinates>36.96793834943387,-122.0346052666234,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1349">
+            <name>5</name>
+            <Point id="1348">
+                <coordinates>36.9450933616313,-122.06031596537618,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1351">
+            <name>5</name>
+            <Point id="1350">
+                <coordinates>36.985185383103165,-122.04904318914896,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1353">
+            <name>F1</name>
+            <Point id="1352">
+                <coordinates>36.964981,-122.079391,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
